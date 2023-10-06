@@ -34,10 +34,16 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/business-reuse/src/favicon.ico",
-              "projects/business-reuse/src/assets"
+              "projects/business-reuse/src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
-              "projects/business-reuse/src/styles.scss"
+              "projects/business-reuse/src/styles.scss",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
             "scripts": []
           },
